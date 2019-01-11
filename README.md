@@ -10,10 +10,25 @@ Using git/github for just yourself
 So the steps are:
 
 -   set up git on your computer (if it isn't already)
+
+Mac: Open Terminal, type:
+
+``` bash
+which git
+```
+
+If you got a path then you are good. In most cases it should already be set up for you.
+
+PC: you need to get git bash installed:
+
+<https://gitforwindows.org>
+
 -   set up a Github account
 -   (optional) get a Github GUI - I like GitKraken, but find myself doing all of the git stuff in Terminal, unless I really screw something up. These are nice for viewing changes (diffs) in your repository, however.
 
-These are the simplest steps for keeping a repository just for yourself: <img src="man/figures/Single_user.png">
+### These are the simplest steps for keeping a repository just for yourself:
+
+<img src="man/figures/Single_user.png">
 
 This is what it looks like to actually do these steps:
 
@@ -21,8 +36,7 @@ This is what it looks like to actually do these steps:
 </iframe>
 <img src="https://j.gifs.com/E9rG8K.gif">
 
-Multi-user approach
--------------------
+### Multi-user approach
 
 And this is the simplest approach to collaborate: <img src="man/figures/Multi_user.png">
 
