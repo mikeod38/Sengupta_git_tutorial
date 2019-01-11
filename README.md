@@ -19,6 +19,8 @@ This is what it looks like to actually do these steps:
 
 <iframe width="650" height="420" src="https://www.youtube.com/embed/Cf3xos1D8zw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
 </iframe>
+<img src="https://j.gifs.com/E9rG8K.gif">
+
 Multi-user approach
 -------------------
 
