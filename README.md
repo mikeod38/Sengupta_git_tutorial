@@ -104,3 +104,37 @@ $ git push origin master
 Now that you've pushed the file to your Forked Github repo, you can press the pull-request button on the file in my repo so I can accept the changes.
 
 Good luck.
+
+Keeping your local up-to-date:
+------------------------------
+
+After an accepted pull-request, there may be additional changes to your file, for example if there were any conflicts or additions that occurred after your forked your repo. To keep your local up to date, you should do 2 things, "fetch" and "pull" locally:
+
+``` bash
+bash_prompt$ git fetch
+
+#make sure you are on your 'master' branch
+```
+
+``` bash
+bash_prompt$ git pull
+
+#make sure you are on your 'master' branch
+```
+
+Keeping your remote up to date:
+-------------------------------
+
+If you submitted a pull-request which was accepted, your file will be up to date, but if someone else does after that, it won't automatically. So you need to do the same thing you did locally above, but 'upstream'. Again, make sure you are on your 'master' branch.
+
+``` bash
+bash_prompt$ git fetch upstream
+
+#make sure you are on your 'master' branch
+```
+
+``` bash
+bash_prompt$ git pull upstream
+```
+
+That's it. There's more to managing branches effectively etc... but those are the basics.
