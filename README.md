@@ -4,8 +4,7 @@ Senguptlet R tutorial
 
 The purpose of this repository is a brief intro for the Sengupta lab to learn to use git and github.
 
-Using git/github for just yourself
-----------------------------------
+### Using git/github for just yourself
 
 So the steps are:
 
@@ -38,7 +37,7 @@ This is what it looks like to actually do these steps:
 
 ### Multi-user approach
 
-And this is the simplest approach to collaborate: <img src="man/figures/Multi_user.png">
+And this is the simplest approach to collaborate to solve a single or limited number of problems: <img src="man/figures/Multi_user.png">
 
 So try it yourself:
 
@@ -105,8 +104,7 @@ Now that you've pushed the file to your Forked Github repo, you can press the pu
 
 Good luck.
 
-Keeping your local up-to-date:
-------------------------------
+### Keeping your local up-to-date:
 
 After an accepted pull-request, there may be additional changes to your file, for example if there were any conflicts or additions that occurred after your forked your repo. To keep your local up to date, you should do 2 things, "fetch" and "pull" locally:
 
@@ -122,19 +120,34 @@ bash_prompt$ git pull
 #make sure you are on your 'master' branch
 ```
 
-Keeping your remote up to date:
--------------------------------
+### Keeping your remote up to date (for constant collaboration and sync):
+
+<img src="man/figures/Multi_user_sync.png">
 
 If you submitted a pull-request which was accepted, your file will be up to date, but if someone else does after that, it won't automatically. So you need to do the same thing you did locally above, but 'upstream'. Again, make sure you are on your 'master' branch.
 
+First, you need to set an additional remote from which you can fetch and pull - we'll call this "upstream" - use the URL from the repo that you want to keep in sync (ie my copy)
+
 ``` bash
-bash_prompt$ git fetch upstream
+bash_prompt$ git remote add uptream https://github.com/<main github username>/Sengupta_git_tutorial.git
 
 #make sure you are on your 'master' branch
 ```
 
+You can now check to make sure it worked, you should now have two different URLs for remote access:
+
 ``` bash
-bash_prompt$ git pull upstream
+bash_prompt$ git remote -v
 ```
 
-That's it. There's more to managing branches effectively etc... but those are the basics.
+``` bash
+bash_prompt$ git fetch upstream
+
+#this will show the status of the upstream repo and any branches
+```
+
+``` bash
+bash_prompt$ git pull upstream <branch name>
+```
+
+That's it. There's more to managing branches effectively, or if you want to only selectively sync etc... but those are the basics.
